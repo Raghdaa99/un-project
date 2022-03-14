@@ -24,6 +24,10 @@ return [
     "city" => "City",
     "enter_name" => "Enter name",
     "enter_email" => "Enter email",
+    "enter_age" => "Enter age",
+    "age" => "Age",
+    "enter_phone" => "Enter Phone",
+    "phone" => "Phone",
     "settings" => "Settings",
     "logout" => "Logout",
     "roles_permissions" => "Roles & Permissions",
@@ -35,4 +39,6 @@ return [
     "assigned" => "Assigned",
     "admins" => "Admins",
     "gender" => "Gender",
+    "patient" => "Patients",
+ 
 ];

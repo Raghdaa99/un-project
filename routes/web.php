@@ -5,6 +5,7 @@ use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\RoleController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\PatientController;
 use App\Http\Controllers\PermissionController;
 
 use Illuminate\Support\Facades\Route;
@@ -39,6 +40,7 @@ Route::prefix('cms/admin')->middleware('auth:admin')->group(function () {
 Route::prefix('cms/admin')->middleware('auth:web,admin')->group(function(){
     Route::resource('categories',CategoryController::class);
     Route::resource('users', UserController::class);
+    Route::resource('patients', PatientController::class);
 
 });
 

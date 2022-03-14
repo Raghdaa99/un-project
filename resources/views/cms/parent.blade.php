@@ -350,8 +350,37 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                 </li>
 
                             </ul>
+                            
                         </li>
 
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-table"></i>
+                                <p>
+                                    patients
+                                    <i class="fas fa-angle-left right"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="{{route('patients.index')}}" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Index Patient</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="{{route('patients.create')}}" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Add Patient</p>
+                                    </a>
+                                </li>
+                        
+                            </ul>
+                        
+                        </li>
+
+
+                        
 
                         <li class="nav-header">{{__('cms.settings')}}</li>
                         <li class="nav-item">
