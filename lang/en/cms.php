@@ -35,4 +35,5 @@ return [
     "assigned" => "Assigned",
     "admins" => "Admins",
     "gender" => "Gender",
+    "specialty" => "Specialty",
 ];

@@ -6,7 +6,7 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\RoleController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\PermissionController;
-
+use App\Http\Controllers\SpecialtyController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,9 +24,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::prefix('cms')->middleware('guest:web,admin')->group(function(){
-    Route::get('{guard}/login',[AuthController::class,'showLogin'])->name('cms.login');  
-    Route::post('login',[AuthController::class,'login']);  
+Route::prefix('cms')->middleware('guest:web,admin')->group(function () {
+    Route::get('{guard}/login', [AuthController::class, 'showLogin'])->name('cms.login');
+    Route::post('login', [AuthController::class, 'login']);
 });
 
 Route::prefix('cms/admin')->middleware('auth:admin')->group(function () {
@@ -36,14 +36,14 @@ Route::prefix('cms/admin')->middleware('auth:admin')->group(function () {
     Route::post('role/update-permission', [RoleController::class, 'updateRolePermission']);
 });
 
-Route::prefix('cms/admin')->middleware('auth:web,admin')->group(function(){
-    Route::resource('categories',CategoryController::class);
+Route::prefix('cms/admin')->middleware('auth:web,admin')->group(function () {
+    Route::resource('categories', CategoryController::class);
     Route::resource('users', UserController::class);
-
-});
-
-Route::prefix('cms/admin')->middleware('auth:web,admin')->group(function(){
-    Route::get('logout',[AuthController::class,'logout'])->name('cms.logout');  
+    Route::resource('specialties', SpecialtyController::class);
 });
 
 
+
+Route::prefix('cms/admin')->middleware('auth:web,admin')->group(function () {
+    Route::get('logout', [AuthController::class, 'logout'])->name('cms.logout');
+});

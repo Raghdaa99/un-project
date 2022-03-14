@@ -39,5 +39,8 @@ class PermissionSeeder extends Seeder
         //Permission::create(['name' => 'Read-Cities', 'guard_name' => 'web']);
         Permission::create(['name' => 'Read-Users', 'guard_name' => 'web']);
 
+      
+
+
     }
 }
