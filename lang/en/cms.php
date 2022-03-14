@@ -1,0 +1,38 @@
+<?php
+
+use function PHPSTORM_META\map;
+
+return [
+    'app_name' => 'UN-Project',
+    'index' => 'Index',
+    'create' => 'Create',
+    'cities' => 'Cities',
+    'content_management' => 'Content Management',
+    'name_en' => 'Name (EN)',
+    'name_ar' => 'Name (Ar)',
+    'enter_name_en' => 'Enter English name',
+    'enter_name_ar' => 'Enter Arabic name',
+    'save' => 'Save',
+    'active' => 'Active',
+    'created_at' => 'Created At',
+    'updated_at' => 'Updated At',
+    "update" => "Update",
+    "hr" => "Human Resources",
+    "users" => "Users",
+    "name" => "Name",
+    "email" => "Email",
+    "city" => "City",
+    "enter_name" => "Enter name",
+    "enter_email" => "Enter email",
+    "settings" => "Settings",
+    "logout" => "Logout",
+    "roles_permissions" => "Roles & Permissions",
+    "roles" => "Roles",
+    "role" => "Role",
+    "permissions" => "Permissions",
+    "guard" => "Guard",
+    "assigned_permissions" => "Role Permissions",
+    "assigned" => "Assigned",
+    "admins" => "Admins",
+    "gender" => "Gender",
+];
